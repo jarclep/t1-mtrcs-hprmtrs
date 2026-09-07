@@ -18,15 +18,15 @@ incremental tras cada commit.
 
 ## Tarea 3 — (a) Limpieza MCAR
 
-| # | Hash | Fecha | Mensaje / Slice |
-|---|------|-------|-----------------|
-| *(pendiente)* | | | |
+| # | Hash     | Fecha      | Mensaje / Slice                                             |
+|---|----------|------------|-------------------------------------------------------------|
+| 1 | `a2ee1d3` | 2026-09-07 | src/clean_data.py: dropna MCAR (14707 -> 10983 obs)         |
 
 ## Tarea 4 — Preprocesamiento
 
-| # | Hash | Fecha | Mensaje / Slice |
-|---|------|-------|-----------------|
-| *(pendiente)* | | | |
+| # | Hash     | Fecha      | Mensaje / Slice                                             |
+|---|----------|------------|-------------------------------------------------------------|
+| 1 | `f772b27` | 2026-09-07 | src/preprocess.py: split estratificado 80/20 (seed 42) + StandardScaler |
 
 ## Tarea 5 — (b) KNN con precisión
 
