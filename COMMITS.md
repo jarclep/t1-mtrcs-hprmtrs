@@ -12,9 +12,9 @@ incremental tras cada commit.
 
 ## Tarea 2 — Carga y selección
 
-| # | Hash | Fecha | Mensaje / Slice |
-|---|------|-------|-----------------|
-| *(pendiente)* | | | |
+| # | Hash     | Fecha      | Mensaje / Slice                                      |
+|---|----------|------------|------------------------------------------------------|
+| 1 | `305138d` | 2026-09-07 | src/load_data.py: 36 vars de myvars2, renombrado, target Dead |
 
 ## Tarea 3 — (a) Limpieza MCAR
 
