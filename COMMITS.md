@@ -44,4 +44,4 @@ incremental tras cada commit.
 
 | # | Hash | Fecha | Mensaje / Slice |
 |---|------|-------|-----------------|
-| *(pendiente)* | | | |
+| 1 | `77af910` | 2026-09-09 | Verificación final de modelos KNN |
