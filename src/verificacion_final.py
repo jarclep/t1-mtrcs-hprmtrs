@@ -1,5 +1,7 @@
 """Tarea 7: verificación final de los modelos KNN."""
 
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 
 from sklearn.neighbors import KNeighborsClassifier
@@ -15,10 +17,25 @@ from clean_data import clean_mcar
 from preprocess import split_scale
 
 
-# Cargar y preparar los datos
-data = load_data(
-    "Base_deficit_y_muertos_112017_conesposos.dta"
+RESULTS_DIR = Path(__file__).resolve().parent.parent / "results"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+
+DATA_PATH = (
+    Path(__file__).resolve().parent.parent
+    / "Base_deficit_y_muertos_112017_conesposos.dta"
 )
+
+
+def save_fig(name: str, tight: bool = True) -> None:
+    """Guarda la figura activa como PNG en results/."""
+    if tight:
+        plt.tight_layout()
+    plt.savefig(RESULTS_DIR / name, dpi=150, bbox_inches="tight")
+    plt.close()
+
+
+# Cargar y preparar los datos
+data = load_data(DATA_PATH)
 
 data = clean_mcar(data)
 
@@ -92,7 +109,7 @@ ConfusionMatrixDisplay(
 ).plot()
 
 plt.title("Matriz de confusión - K=29")
-plt.show()
+save_fig("matriz_confusion_k29.png")
 
 
 # Matriz de confusión para K=5
@@ -109,7 +126,7 @@ ConfusionMatrixDisplay(
 ).plot()
 
 plt.title("Matriz de confusión - K=5")
-plt.show()
+save_fig("matriz_confusion_k5.png")
 
 
 # Comparación de métricas
@@ -145,4 +162,4 @@ plt.xticks(x, modelos)
 plt.ylabel("Valor de la métrica")
 plt.title("Comparación de modelos KNN")
 plt.legend()
-plt.show()
+save_fig("comparacion_modelos_knn.png")
