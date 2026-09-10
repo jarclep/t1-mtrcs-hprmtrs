@@ -38,7 +38,7 @@ incremental tras cada commit.
 
 | # | Hash | Fecha | Mensaje / Slice |
 |---|------|-------|-----------------|
-| *(pendiente)* | | | |
+| 1 | `815c16a` | 2026-09-09 | KNN con métrica sensitividad, K=5 |
 
 ## Tarea 7 — Verificación final
 
