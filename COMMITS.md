@@ -32,7 +32,7 @@ incremental tras cada commit.
 
 | # | Hash | Fecha | Mensaje / Slice |
 |---|------|-------|-----------------|
-| *(pendiente)* | | | |
+| 1| 'ba317be' |2026-09-09 | Knn con metrica precision, K=29|
 
 ## Tarea 6 — (c) KNN con sensitividad
 
